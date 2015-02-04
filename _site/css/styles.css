@@ -1,10 +1,7 @@
 /*Stolen from macwright.org while I'm learning.
-
 /* --------------------------------------------------------------
-
    reset.css
    * Resets default browser CSS.
-
 -------------------------------------------------------------- */
 
 html {
@@ -242,8 +239,9 @@ h1 {
   line-height: 40px;
 }
 
-h1.name {
+h1.name, h1.name a:hover {
 	padding-top: 50px;
+	text-decoration: none;
 }
 
 h1 a {
