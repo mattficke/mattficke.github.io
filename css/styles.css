@@ -5,7 +5,8 @@
 
 body {
   font-family: "Roboto Slab", serif;
-  background: #F5F5F5;
+  background: #eee;
+  color: #222;
 }
 
 .column-1 { width: 8.333%; }
@@ -28,6 +29,7 @@ body {
 
 a {
   text-decoration: none;
+  color: #2A5DB0
 }
 
 header {
@@ -37,6 +39,7 @@ header {
 
 h1.name {
   padding-bottom: 1em;
+  color: #222;
 }
 
 ul.navigation {
