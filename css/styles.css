@@ -3,6 +3,11 @@
   overflow: auto;
 }
 
+body {
+  font-family: "Roboto Slab", serif;
+  background: #F5F5F5;
+}
+
 .column-1 { width: 8.333%; }
 .column-2 { width: 16.66%; }
 .column-3 { width: 25%; }
@@ -17,8 +22,8 @@
 .column-12 { width: 100%; }
 
 .column {
-  border: 1px solid tomato;
   float: left;
+  min-height: 1px;
 }
 
 a {
@@ -26,19 +31,42 @@ a {
 }
 
 header {
-  background: #eee;
+  font-family: "Roboto", sans-serif;
+
 }
 
 h1.name {
-  padding-bottom: 50px;
+  padding-bottom: 1em;
 }
 
 ul.navigation {
   list-style:none;
-  padding-top: 50px;
 }
 
 ul.navigation li {
   display: inline-block;
+  margin: 0 .2em;
+}
 
+ul.projects li {
+  padding: 3em 0;
+  font-size: 1.3em;
+}
+
+.items {
+  font-family: "Roboto", sans-serif;
+}
+
+.item-info {
+  text-align: center;
+}
+
+.project-text {
+  width: 65%;
+  margin: 0 auto;
+}
+
+.project-text li {
+  display: inline-block;
+  margin: 0 .2em;
 }
