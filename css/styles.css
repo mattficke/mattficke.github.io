@@ -85,7 +85,7 @@ header h1 {
   color: #222;
 }
 
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
   header h1 {
     float: none;
   }
@@ -95,7 +95,7 @@ header h1 {
 
 }
 
-@media only screen and (max-width: 640px) {
+@media (max-width: 640px) {
   li {
     display: block;
     border-left: none;
