@@ -99,5 +99,7 @@ header h1 {
   li {
     display: block;
     border-left: none;
+    padding: .4em 0;
   }
+
 }
