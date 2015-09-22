@@ -3,10 +3,16 @@
   overflow: auto;
 }
 
+html {
+  margin: 0 auto;
+  max-width: 1080px;
+}
+
 body {
   font-family: "Roboto Slab", serif;
-  background: #eee;
   color: #222;
+  min-height:100%;
+  background-color:#eee;
 }
 
 .column-1 { width: 8.333%; }
@@ -27,9 +33,43 @@ body {
   min-height: 1px;
 }
 
+.row {
+  width: 90%;
+  margin: 0 auto;
+}
+
 a {
   text-decoration: none;
   color: #2A5DB0
+}
+
+article {
+  width: 90%;
+  /*max-width: 864px;*/
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+}
+
+nav {
+  float: right;
+}
+
+nav a {
+  /*margin: 0 1.7%;*/
+}
+
+li:first-child {
+  border-left: none;
+}
+
+li {
+  border-left: 1px solid black;
+  padding-left: .2em;
+  margin: 0 auto;
+  display: inline-block;
 }
 
 header {
@@ -37,39 +77,27 @@ header {
 
 }
 
-h1.name {
-  padding-bottom: 1em;
+header h1 {
+  float: left;
+}
+
+.name{
   color: #222;
 }
 
-ul.navigation {
-  list-style:none;
+@media only screen and (max-width: 768px) {
+  header h1 {
+    float: none;
+  }
+  nav {
+    float: left;
+  }
+
 }
 
-ul.navigation li {
-  display: inline-block;
-  margin: 0 .2em;
-}
-
-ul.projects li {
-  padding: 3em 0;
-  font-size: 1.3em;
-}
-
-.items {
-  font-family: "Roboto", sans-serif;
-}
-
-.item-info {
-  text-align: center;
-}
-
-.project-text {
-  width: 65%;
-  margin: 0 auto;
-}
-
-.project-text li {
-  display: inline-block;
-  margin: 0 .2em;
+@media only screen and (max-width: 640px) {
+  li {
+    display: block;
+    border-left: none;
+  }
 }
